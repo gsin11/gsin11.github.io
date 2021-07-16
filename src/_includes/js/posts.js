@@ -1,4 +1,4 @@
-const COUNTER_BASE_URL = "https://api-gsin-in.vercel.app";
+const COUNTER_BASE_URL = "https://api.gsin.in";
 
 function getLoveCount() {
   const url = window.location.pathname.split("/blog/");
