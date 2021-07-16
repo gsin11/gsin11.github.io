@@ -1,9 +1,34 @@
-(() => {
+function setLocalStorage(name, value, doStringify) {
+  if (window.localStorage) {
+    window.localStorage.setItem(
+      name,
+      doStringify ? JSON.stringify(value) : value
+    );
+  }
+}
+
+function getLocalStorage(name) {
+  if (window.localStorage) {
+    window.localStorage.getItem(name);
+  }
+  return undefined;
+}
+
+function setSessionStorage(name, value, doStringify) {
+  if (window.sessionStorage) {
+    window.sessionStorage.setItem(
+      name,
+      doStringify ? JSON.stringify(value) : value
+    );
+  }
+}
+
+function bootstrapTheme() {
   let defaultMode = "light";
-  let mode = window.localStorage.getItem("mode");
+  let mode = getLocalStorage("mode");
 
   if (!mode) {
-    window.localStorage.setItem("mode", defaultMode);
+    setLocalStorage("mode", defaultMode);
     mode = defaultMode;
   }
 
@@ -15,8 +40,12 @@
     const currentTheme = event.target.dataset.theme;
     event.target.dataset.theme = currentTheme === "dark" ? "light" : "dark";
 
-    window.localStorage.setItem("mode", event.target.dataset.theme);
+    setLocalStorage("mode", event.target.dataset.theme);
     document.body.classList.remove(currentTheme);
     document.body.classList.add(event.target.dataset.theme);
   });
+}
+
+(() => {
+  bootstrapTheme();
 })();
