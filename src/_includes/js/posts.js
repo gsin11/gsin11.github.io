@@ -5,9 +5,7 @@ function getLoveCount() {
   const slug = url[1]?.replace(".html", "");
 
   if (slug) {
-    fetch(`${COUNTER_BASE_URL}/api/counter/${slug}`, {
-      headers: { "Content-Type": "application/json; charset=utf-8" },
-    })
+    fetch(`${COUNTER_BASE_URL}/api/counter/${slug}`)
       .then((res) => res.json())
       .then((response) => {
         setSessionStorage(response.slug, response.count);
