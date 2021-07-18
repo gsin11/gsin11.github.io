@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "sass": "sass --style=compressed src/assets/scss/heart.scss src/_includes/css/heart.css",
+    "start": "npm-run-all sass --parallel watch:*"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +16,8 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-img": "^0.9.0",
-    "eleventy-plugin-reading-time": "0.0.1"
+    "eleventy-plugin-reading-time": "0.0.1",
+    "sass": "^1.35.2"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.1.1",

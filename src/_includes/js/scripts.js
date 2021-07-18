@@ -9,7 +9,7 @@ function setLocalStorage(name, value, doStringify) {
 
 function getLocalStorage(name) {
   if (window.localStorage) {
-    window.localStorage.getItem(name);
+    return window.localStorage.getItem(name);
   }
   return undefined;
 }
@@ -21,6 +21,13 @@ function setSessionStorage(name, value, doStringify) {
       doStringify ? JSON.stringify(value) : value
     );
   }
+}
+
+function getSessionStorage(name) {
+  if (window.sessionStorage) {
+    return window.sessionStorage.getItem(name);
+  }
+  return undefined;
 }
 
 function bootstrapTheme() {

@@ -10,6 +10,7 @@
   <!-- capture the CSS content as a Nunjucks variable -->
   {% set css %}
     {% include "css/critical.css" %}
+    {% include "css/heart.css" %}
   {% endset %}
   <!-- feed it through our cssmin filter to minify -->
   <style>
@@ -62,6 +63,11 @@
         <section itemprop="articleBody">
           {{ content | safe }}
         </section>
+        <div id="heart-wrapper">
+          <input type="checkbox" id="toggle-heart" />
+          <label for="toggle-heart" aria-label="like">❤</label>
+          <span id="loveCount"></span>
+        </div>
       </article>
     </main>
     {% include "partials/_subscribe.html" %}
