@@ -74,3 +74,5 @@ Please share your feedback in the comment section and let me know if you want mo
 - [Privacy Tools](https://privacytools.io/)
 - [Tor Project](https://www.torproject.org/)
 - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/)
+
+{% include partials/_suggestion.html %}

@@ -98,3 +98,5 @@ It is still debatable when it comes to accessibility, there is no wrong/right bu
 - Keep your layout and fonts responsive in size
 
 Thanks for reading my article!
+
+{% include partials/_suggestion.html %}

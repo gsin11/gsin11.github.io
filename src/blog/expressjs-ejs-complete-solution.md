@@ -229,3 +229,5 @@ After doing all the above stuff, it's time to run your website on the local mach
 After running the above command you will see you're server has been started on the `3000` port and accessible through `http://localhost:3000/`
 
 Wish you all the best, in case you have any question feel free to drop them below or use my contact page.
+
+{% include partials/_suggestion.html %}

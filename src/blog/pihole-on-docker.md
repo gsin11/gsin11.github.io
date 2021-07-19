@@ -89,3 +89,5 @@ After the installation of PiHole now we need to map other devices to use PiHole 
 </picture>
 
 Thanks for following the tutorial, happy coding!
+
+{% include partials/_suggestion.html %}

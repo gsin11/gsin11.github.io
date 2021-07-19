@@ -81,3 +81,5 @@ Copilot is very new into the industry and seems very fascinating to see a bot wr
 ## Conclusion <a name="conclusion" class="anchor" aria-hidden="true" href="#conclusion">#</a>
 
 I like new things in the programming or tech world to try, whether it's a framework, library, or tool like Copilot. This tool can help people in their future project developments, but can't replace humans. I can see people will defiantly start using this tool in their regular day-2-day work (like we adapt to autocompletion of code syntax tools).
+
+{% include partials/_suggestion.html %}

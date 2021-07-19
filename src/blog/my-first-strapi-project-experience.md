@@ -54,3 +54,5 @@ After having these many benefits I like to recommend Strapi for small to medium 
 - [Installation guide](https://strapi.io/documentation/developer-docs/latest/getting-started/installation.html#installation-guides)
 
 Stay connected, I'll showcase my Free strapi project hosting set up in my next article.
+
+{% include partials/_suggestion.html %}

@@ -93,3 +93,5 @@ $ npx sb init
 ```bash
 $ npx create-next-app
 ```
+
+{% include partials/_suggestion.html %}

@@ -144,6 +144,8 @@ app.post("/user/add", (req, res) => {
 });
 ```
 
-## Summary
+## Conclusion
 
 All I can say that it is important to have a proper logging system set up in the application. This can make a developer's life easier to debug any problem in the production environment with less turnaround time.
+
+{% include partials/_suggestion.html %}

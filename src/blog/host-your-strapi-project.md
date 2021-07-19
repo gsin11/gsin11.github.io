@@ -173,3 +173,5 @@ Sometimes it doesn't work on the first attempt, It would suggest following exact
 - In case it doesn't work, leave your query in the comments or Google ;)
 
 Thanks for reading.
+
+{% include partials/_suggestion.html %}

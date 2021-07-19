@@ -100,6 +100,10 @@ module.exports = function (eleventyConfig) {
     return `${MONTHS[dd.getMonth()]} ${dd.getDate()}, ${dd.getFullYear()}`;
   });
 
+  eleventyConfig.addFilter("getSlug", function (value) {
+    return value.replace(".html", ".md");
+  });
+
   eleventyConfig.addNunjucksAsyncFilter(
     "jsmin",
     async function (code, callback) {

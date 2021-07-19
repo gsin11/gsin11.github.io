@@ -121,3 +121,5 @@ $ sudo pip3 install docker-compose
 ```
 
 Thanks for following the tutorial, happy coding!
+
+{% include partials/_suggestion.html %}

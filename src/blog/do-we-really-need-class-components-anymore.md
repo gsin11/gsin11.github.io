@@ -207,6 +207,8 @@ In the example above you have seen, we can gain everything by using the function
 
 Nevertheless, ReactJS community is still supporting class components and there is no hard rule to avoid them.
 
+{% include partials/_suggestion.html %}
+
 ## Useful links
 
 - [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
