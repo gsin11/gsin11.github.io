@@ -27,7 +27,7 @@ npx create-next-app --example with-mongodb with-mongodb-app
 yarn create next-app --example with-mongodb with-mongodb-app
 ```
 
-> Example from <a href="https://github.com/vercel/next.js/tree/canary/examples/with-mongodb">https://github.com/vercel/next.js/tree/canary/examples/with-mongodb</a>
+> Example from <a href="https://github.com/vercel/next.js/tree/canary/examples/with-mongodb">with-mongodb</a>
 
 In above command you will get NextJS project setup inside `with-mongodb-app` directory.
 
