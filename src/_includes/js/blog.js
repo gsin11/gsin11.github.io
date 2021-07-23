@@ -16,7 +16,7 @@ function setLoveCount() {
     fetch(`${COUNTER_BASE_URL}/api/counters`)
       .then((res) => res.json())
       .then((response) => {
-        setSessionStorage(SESSION_VAR, response);
+        setSessionStorage(SESSION_VAR, response, true);
         updateCount(response);
       })
       .catch((err) => console.log(err));
