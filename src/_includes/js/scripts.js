@@ -55,4 +55,8 @@ function bootstrapTheme() {
 
 (() => {
   bootstrapTheme();
+  console.log(
+    "%c\ud83e\udd2b Hint: Try pressing ctrl+k for a treat \ud83c\udf6d",
+    "background: #1B2024; color: #D4EBFF; padding: 10px 16px"
+  );
 })();
