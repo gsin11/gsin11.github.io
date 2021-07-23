@@ -18,8 +18,8 @@ function setLoveCount() {
       .then((response) => {
         setSessionStorage(SESSION_VAR, response, true);
         setTimeout(() => {
-          updateCount(response);
-        }, 100);
+          updateCount(getSessionStorage(SESSION_VAR));
+        }, 1000);
       })
       .catch((err) => console.log(err));
   }
