@@ -17,7 +17,9 @@ function setLoveCount() {
       .then((res) => res.json())
       .then((response) => {
         setSessionStorage(SESSION_VAR, response, true);
-        updateCount(response);
+        setTimeout(() => {
+          updateCount(response);
+        }, 100);
       })
       .catch((err) => console.log(err));
   }
