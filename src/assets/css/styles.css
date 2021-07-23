@@ -4,6 +4,10 @@
   padding-right: var(--spacing-3);
 }
 
+.strong {
+  font-weight: 700;
+}
+
 time,
 small {
   font-size: var(--fontSize-0);
@@ -83,7 +87,6 @@ a:hover {
 }
 
 .blog-post-card a {
-  display: block;
   text-decoration: none;
   color: var(--color-text-primary);
 }
@@ -99,8 +102,13 @@ a:hover {
   margin-bottom: var(--spacing-2);
 }
 
-.blog-post-card time {
+.blog-post-card h1 a {
   display: block;
+}
+
+.blog-post-card time,
+.blog-post-card span {
+  display: inline-block;
   margin-bottom: var(--spacing-2);
 }
 

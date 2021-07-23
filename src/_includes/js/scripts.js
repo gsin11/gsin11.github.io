@@ -1,3 +1,5 @@
+const COUNTER_BASE_URL = "https://api.gsin.in";
+
 function setLocalStorage(name, value, doStringify) {
   if (window.localStorage) {
     window.localStorage.setItem(

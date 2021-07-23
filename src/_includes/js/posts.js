@@ -1,4 +1,3 @@
-const COUNTER_BASE_URL = "https://api.gsin.in";
 const url = window.location.pathname.split("/blog/");
 const SLUG = url[1]?.replace(".html", "");
 

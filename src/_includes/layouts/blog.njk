@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <meta name="google-site-verification" content="{{site.googleSiteVerificationCode}}">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <!-- capture the CSS content as a Nunjucks variable -->
+  {% set css %}
+    {% include "css/critical.css" %}
+  {% endset %}
+  <!-- feed it through our cssmin filter to minify -->
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml">
+  <link rel="icon" href="{{ '/assets/icons/favicon-32x32.png' | url }}" type="image/png">
+  <meta name="theme-color" content="#9e9e9e">
+  <link rel="apple-touch-icon" sizes="48x48" href="/assets/icons/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/favicon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/favicon-144x144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/icons/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="/assets/icons/favicon-256x256.png">
+  <link rel="apple-touch-icon" sizes="384x384" href="/assets/icons/favicon-384x384.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/favicon-512x512.png">
+
+  <meta property="og:url" content="{{site.url}}">
+  <meta property="og:author" content="{{site.siteName}}">
+  <meta property="og:site_name" content="{{site.siteName}} - {{site.subtitle}}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{userData.twitter}}">
+  <meta name="twitter:creator" content="@{{userData.twitter}}">
+  <meta name="description" content="Frontend Architect at PublicisSapient, Frontend Consultant interested in making lives of frontend developers easier.">
+  <meta property="og:description" content="Frontend Architect at PublicisSapient, Frontend Consultant interested in making lives of frontend developers easier.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{site.url}}/assets/img/author-500x500.png">
+  <meta name="twitter:description" content="Frontend Architect at PublicisSapient, Frontend Consultant interested in making lives of frontend developers easier.">
+  <meta name="twitter:image" content="{{site.url}}/assets/img/author-500x500.png">
+  <meta property="og:title" content="{{site.siteName}}">
+  <meta name="twitter:title" content="{{site.siteName}}">
+</head>
+<body>
+  <div class="global-wrapper">
+    {% include "partials/_header.html" %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include "partials/_footer.html" %}
+  </div>
+  
+  <!-- capture the JS content as a Nunjucks variable -->
+  {% set js %}
+    {% include "js/scripts.js" %}
+    {% include "js/blog.js" %}
+  {% endset %}
+  <!-- feed it through our jsmin filter to minify -->
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
+</body>
+</html>

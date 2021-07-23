@@ -73,6 +73,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
+
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(readingTime);
 
@@ -102,6 +104,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("getSlug", function (value) {
     return value.replace(".html", ".md");
+  });
+
+  eleventyConfig.addFilter("getSlugId", function (value) {
+    return value.replace(".html", "").replace("/blog/", "");
   });
 
   eleventyConfig.addNunjucksAsyncFilter(
