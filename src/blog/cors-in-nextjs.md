@@ -13,11 +13,11 @@ featuredImage: /assets/img/cors-in-nextjs-640w.webp
   <img srcset="/assets/img/cors-in-nextjs-320w.webp" alt="Do we need class components anymore?" loading="lazy">
 </picture>
 
-Setting up CORS is always a challenge for people who are not really from server side application background. Luckily it wasn't the case for me, but <a href="https://vercel.com/">Vercel</a>.
+Setting up CORS is always a challenge for people who are not really from server-side application backgrounds. Luckily it wasn't the case for me, but <a href="https://vercel.com/">Vercel</a>.
 
-I have couple of projects on Vercel where I can host client side applications built on ReactJS, NextJS, Gatsby etc. Recently I found you can host <a href="https://vercel.com/docs/serverless-functions/introduction">serverless</a> function on Vercel as well.
+I have a couple of projects on Vercel where I can host client-side applications built on ReactJS, NextJS, Gatsby, etc. Recently I found you can host <a href="https://vercel.com/docs/serverless-functions/introduction">serverless</a> functions on Vercel as well.
 
-These serverless functions are nothing but opens up NodeJS server side script access. You can create server and run on Vercel as well as send emails and what not.
+These serverless functions are nothing but open up NodeJS server-side script access. You can create a server and run it on Vercel as well as send emails and whatnot.
 
 ## How to setup NextJS API
 
@@ -29,15 +29,15 @@ yarn create next-app --example with-mongodb with-mongodb-app
 
 > Example from <a href="https://github.com/vercel/next.js/tree/canary/examples/with-mongodb">https://github.com/vercel/next.js/tree/canary/examples/with-mongodb</a>
 
-In above command you will get NextJS project setup inside `with-mongodb-app` directory.
+In the above command, you will get the NextJS project setup inside `with-mongodb-app` directory.
 
-Now we have our application ready, its time to setup the mongodb instance.
+Now we have our application ready, it's time to set up the MongoDB instance.
 
-You can use <a href="https://mongodb.com/atlas">mongodb.com</a> to setup free account with limited space.
+You can use <a href="https://mongodb.com/atlas">mongodb.com</a> to set up a free account with limited space.
 
 ## MongoDB setup
 
-Once you have your mongodb instance ready, feel free rename and edit `env.local.example` to `.env.local`
+Once you have your MongoDB instance ready, feel free to rename and edit `env.local.example` to `.env.local`
 
 Set each variable on `.env.local`:
 
@@ -57,7 +57,7 @@ yarn dev
 
 ```
 
-Application should be up and running on <a href="http://localhost:3000">http://localhost:3000</a>
+The application should be up and running on <a href="http://localhost:3000">http://localhost:3000</a>
 
 ## CORS setup
 
@@ -87,7 +87,7 @@ Create `vercel.json` under the root folder.
 }
 ```
 
-Above change will work for `GET` requests but you will face problems while making `PUT` and `POST` requests. For this, we need to make one more changes.
+The above change will work for `GET` requests but you will face problems while making `PUT` and `POST` requests. For this, we need to make one more change.
 
 Go to `/api/index.js` file.
 
@@ -105,10 +105,3 @@ export default async (req, res) => {
 ## Conclusion
 
 {% include partials/_suggestion.html %}
-
-## Useful links
-
-- [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
-- [Introduction to Hooks](https://reactjs.org/docs/hooks-intro.html)
-- [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
-- [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)
