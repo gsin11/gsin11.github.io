@@ -2,7 +2,7 @@
 title: I don't know JavaScript but ReactJS
 date: "2021-07-25"
 permalink: /blog/i-dont-know-javascript-but-reactjs.html
-ogDescription: ReactJS is a mature enough library that becomes the first choice for developers. When ReactJS got launched it had a strong concept of class components.
+ogDescription: Isn't it weird to witness such a scenario where someone can code the ReactJS component but when you ask them to bind an onClick event in Vanilla JavaScript they can't?
 ogImage: /assets/img/i-dont-know-javascript-but-reactjs-800w.jpeg
 featuredImage: /assets/img/i-dont-know-javascript-but-reactjs-640w.webp
 ---
