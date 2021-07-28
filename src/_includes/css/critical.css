@@ -65,6 +65,10 @@ body.dark {
   fill: var(--color-text-primary);
 }
 
+.suggestion {
+  padding-top: var(--spacing-4);
+}
+
 picture {
   display: block;
   width: var(--maxWidth-full);
