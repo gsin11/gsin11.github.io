@@ -20,6 +20,10 @@
     {
       "label": "The Planet",
       "link": "https://the-planet.vercel.app/"
+    },
+    {
+      "label": "FitManny.uk",
+      "link": "https://fitmanny.uk/"
     }
   ]
 }

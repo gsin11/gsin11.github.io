@@ -2,7 +2,6 @@ const fs = require("fs");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const CleanCSS = require("clean-css");
-const readingTime = require("eleventy-plugin-reading-time");
 const { minify } = require("terser");
 const Image = require("@11ty/eleventy-img");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -76,7 +75,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
 
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(readingTime);
 
   compileImages();
 
