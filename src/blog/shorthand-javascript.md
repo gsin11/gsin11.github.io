@@ -17,7 +17,7 @@ We have been writing JavaScript from quite a while now, I know some of you have 
 
 In this article I'll show some short hand conditional, looping, or operator statements which you can use in your daily coding practice.
 
-## 1. Empty and array
+## 1. Empty an array
 
 ```js
 const arr = ["Charlie", "John", "James"];
